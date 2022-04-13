@@ -7,6 +7,12 @@ import java.time.LocalDate;
  * day of the month as startDate.
  */
 public class MonthlyAppointment extends Appointment{
+    /**
+     * MonthlyAppointment constructs an Appointment that occurs once a month
+     * @param description String containing description for new MonthlyAppointment
+     * @param startDate LocalDate that contains date appointments begin
+     * @param endDate LocalDate that contains date appointments end
+     */
     public MonthlyAppointment(String description, LocalDate startDate, LocalDate endDate) {
         super(description, startDate, endDate);
     }

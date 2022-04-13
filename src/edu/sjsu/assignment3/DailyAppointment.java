@@ -6,6 +6,12 @@ import java.time.LocalDate;
  * DailyAppointment is an Appointment that occurs every day from the startDate to the endDate
  */
 public class DailyAppointment extends Appointment{
+    /**
+     * DailyAppointment constructs an Appointment that occurs every day
+     * @param description String containing description for new DailyAppointment
+     * @param startDate LocalDate that contains date appointments begin
+     * @param endDate LocalDate that contains date appointments end
+     */
     public DailyAppointment(String description, LocalDate startDate, LocalDate endDate) {
         super(description, startDate, endDate);
     }

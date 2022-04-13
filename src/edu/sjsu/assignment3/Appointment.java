@@ -55,11 +55,18 @@ public abstract class Appointment implements Comparable<Appointment> {
         this.endDate = endDate;
     }
 
-    //TODO:document th
+    /**
+     * getDescription retrieves the description of this Appointment
+     * @return String with the Appointment's description
+     */
     public String getDescription() {
         return description;
     }
 
+    /**
+     * setDescription modifies the description of this Appointment
+     * @param description String containing the new description
+     */
     public void setDescription(String description) {
         this.description = description;
     }
@@ -84,7 +91,7 @@ public abstract class Appointment implements Comparable<Appointment> {
     }
 
     /**
-     * compareTo overrides compareTo from Comparable<Appointment> to order Appointments first by startDate, then by
+     * compareTo overrides compareTo from Comparable to order Appointments first by startDate, then by
      * endDate, then by description. If all three match, the Appointments are equal
      * @param appointment Appointment for the right hand side of the comparison
      * @return 0 if equal, positive if this should be before appointment, negative if this should be after appointment
